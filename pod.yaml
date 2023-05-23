@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: html-app-pod
+spec:
+  containers:
+    - name: admiring-goldwasser
+      image: dorina12345/image-simple-app:latest
+      ports:
+        - containerPort: 80

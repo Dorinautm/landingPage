@@ -17,4 +17,6 @@ steps:
       - 'gcr.io/gothic-victor-387615/dorina12345/image-simple-app'
       - '--platform'
       - 'managed'
+       - '--region'
+      - 'global'
       # Additional flags can be added here as per your requirements

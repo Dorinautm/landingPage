@@ -18,5 +18,5 @@ steps:
       - '--platform'
       - 'managed'
       - '--region'
-      - 'global'
+      - 'us-central1'
       # Additional flags can be added here as per your requirements

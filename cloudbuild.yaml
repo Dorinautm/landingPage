@@ -1,11 +1,11 @@
 steps:
   # Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/image-simple-app', '.']
+    args: ['build', '-t', 'gcr.io/gothic-victor-387615/dorina12345/image-simple-app', '.']
 
   # Push the Docker image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/image-simple-app']
+    args: ['push', 'gcr.io/gothic-victor-387615/dorina12345/image-simple-app']
 
   # Deploy the image to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
@@ -14,7 +14,7 @@ steps:
       - 'deploy'
       - 'my-cloudrun-service'
       - '--image'
-      - 'gcr.io/$PROJECT_ID/image-simple-app'
+      - 'gcr.io/gothic-victor-387615/dorina12345/image-simple-app'
       - '--platform'
       - 'managed'
       # Additional flags can be added here as per your requirements
